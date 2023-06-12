@@ -1,5 +1,7 @@
 {
+  "baseURL":"https://mingky.me/",
   "theme":"paper",
+  "languageCode":"ko",
   "defaultContentLanguage": "ko",
   "title": "MINGKYME 블로그",
   "disqusShortname": "mingkyme",
