@@ -1,0 +1,23 @@
+{
+  "theme":"paper",
+  "defaultContentLanguage": "ko",
+  "title": "MINGKYME 블로그",
+  "disqusShortname": "mingkyme",
+  "googleAnalytics":"G-JXMPBB9GZR",
+  "params": {
+    "color": "linen",
+    "github": "mingkyme",
+    "instagram": "food_mingky",
+    "avatar": "mingky.me@gmail.com",
+    "name": "MINGKYME",
+    "bio": "불편함을 해소하기 위해, 오늘도 디버깅을 합니다.",
+    "monoDarkIcon": true
+  },
+  "markup": {
+    "goldmark": {
+      "renderer": {
+        "unsafe": true
+      }
+    }
+  }
+}
