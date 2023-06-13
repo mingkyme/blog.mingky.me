@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-categories: ["diary"]
+categories: ["Diary"]
 ---
 ## Done List
 - None
