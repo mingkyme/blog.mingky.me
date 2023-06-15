@@ -31,5 +31,10 @@
         "weight":10
       }
     ]
-  }
+  },
+  "sitemap": {
+    "changefreq": "monthly",
+    "filename": "sitemap.xml",
+    "priority": 0.5
+ }
 }
