@@ -15,15 +15,15 @@ jobs:
           hugo-version: '0.113.0'
 
       - name: Build
-        run: hugo --minify -b 'https://megolang.me/'
+        run: hugo --minify -b 'https://megolang.com/'
 
       - name: add CNAME
-        run: echo "megolang.me" > ./public/CNAME
+        run: echo "megolang.com" > ./public/CNAME
         
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           publish_branch: gh-pages
-          external_repository: mingkyme/megolang.me
+          external_repository: mingkyme/megolang.com
           publish_dir: ./public
