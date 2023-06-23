@@ -1,0 +1,28 @@
+name: github pages
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.113.0'
+
+      - name: Build
+        run: hugo --minify -b 'https://megolang.me/'
+
+      - name: add CNAME
+        run: echo "megolang.me" > ./public/CNAME
+        
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./public
