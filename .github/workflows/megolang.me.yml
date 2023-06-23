@@ -14,6 +14,9 @@ jobs:
         with:
           hugo-version: '0.113.0'
 
+      - name: Inject G-Tag
+        run: sed -i 's/G-JXMPBB9GZR/G-T2L6R32KL8/g' config.json
+
       - name: Build
         run: hugo --minify -b 'https://megolang.com/'
 
