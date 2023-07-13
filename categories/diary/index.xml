@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diary on MINGKYME 블로그</title><link>https://blog.mingky.me/categories/diary/</link><description>Recent content in Diary on MINGKYME 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Wed, 12 Jul 2023 22:57:52 +0900</lastBuildDate><atom:link href="https://blog.mingky.me/categories/diary/index.xml" rel="self" type="application/rss+xml"/><item><title>초복 중복 말복</title><link>https://blog.mingky.me/post/diaries/2023-07-12/</link><pubDate>Wed, 12 Jul 2023 22:57:52 +0900</pubDate><guid>https://blog.mingky.me/post/diaries/2023-07-12/</guid><description>어제는 초복이었다.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Diary on MINGKYME 블로그</title><link>https://blog.mingky.me/categories/diary/</link><description>Recent content in Diary on MINGKYME 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 13 Jul 2023 22:14:22 +0900</lastBuildDate><atom:link href="https://blog.mingky.me/categories/diary/index.xml" rel="self" type="application/rss+xml"/><item><title>Edge 컴퓨팅의 장점</title><link>https://blog.mingky.me/post/diaries/2023-07-13/</link><pubDate>Thu, 13 Jul 2023 22:14:22 +0900</pubDate><guid>https://blog.mingky.me/post/diaries/2023-07-13/</guid><description>CDN 서비스들은 Edge, Relay, Origin 이라는 개념을 가지고 있다.
+Edge 서버는 Client의 접속을 받는 1차 서버이다.
+Edge 서버는 수가 많다. 여러 트래픽을 분산하여 처리하기 위해서이다.
+region 이란 개념으로 묶여 있다.
+그렇다면 Relay는 무엇일까?
+Relay는 Origin과 통신하는 서버들이다.
+Origin 서버는 CDN 내부에 있을수도, 외부에 있을 수도 있다.
+서버 수는 Edge &amp;gt; Relay &amp;gt; Origin 순으로 많다.
+Relay가 많다면 Origin에 요청이 많아진다.
+사용자 경험을 위해서 Edge 컴퓨팅을 이용할 수 있다.
+사용하면 좋은 예시</description></item><item><title>초복 중복 말복</title><link>https://blog.mingky.me/post/diaries/2023-07-12/</link><pubDate>Wed, 12 Jul 2023 22:57:52 +0900</pubDate><guid>https://blog.mingky.me/post/diaries/2023-07-12/</guid><description>어제는 초복이었다.
 삼계탕을 먹으며 초복의 뜻을 물어보는 질문에 당연하게 생각했던 부분이라 정의에 대해서 잘 알지 못한다는걸 깨달았다.
 같이 식사한 인원들의 의견은 이랬다.
 24절기 중 하나 아닌가? 삼계탕 먹기 위한 날 가장 더운 날 실제로 검색을 해보니 24절기는 아니고 가장 더운 날이라고 한다.
