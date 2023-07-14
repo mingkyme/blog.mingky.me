@@ -1,4 +1,10 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on MINGKYME 블로그</title><link>https://blog.mingky.me/post/</link><description>Recent content in Posts on MINGKYME 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Thu, 13 Jul 2023 22:14:22 +0900</lastBuildDate><atom:link href="https://blog.mingky.me/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Edge 컴퓨팅의 장점</title><link>https://blog.mingky.me/post/diaries/2023-07-13/</link><pubDate>Thu, 13 Jul 2023 22:14:22 +0900</pubDate><guid>https://blog.mingky.me/post/diaries/2023-07-13/</guid><description>CDN 서비스들은 Edge, Relay, Origin 이라는 개념을 가지고 있다.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on MINGKYME 블로그</title><link>https://blog.mingky.me/post/</link><description>Recent content in Posts on MINGKYME 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Fri, 14 Jul 2023 22:13:25 +0900</lastBuildDate><atom:link href="https://blog.mingky.me/post/index.xml" rel="self" type="application/rss+xml"/><item><title>nginx header 등록</title><link>https://blog.mingky.me/post/diaries/2023-07-14/</link><pubDate>Fri, 14 Jul 2023 22:13:25 +0900</pubDate><guid>https://blog.mingky.me/post/diaries/2023-07-14/</guid><description>nginx에서 header를 추가하는 방법 nginx에는 2방향의 header 추가 방법이 있다.
+Nginx -&amp;gt; Origin (2) Nginx -&amp;gt; Client (4) Client 1-&amp;gt; Nginx 2-&amp;gt; Origin Client &amp;lt;-4 Nginx &amp;lt;-3 Origin 1,2,3,4 순서 중에서 2번과 4번 요청을 보내는 순간에는 header를 추가할 수 있다.
+2번 추가 방법
+proxy_set_header To-Origin Hello; 4번 추가 방법
+add_header To-Client World [always]; add_header의 경우엔 always 라는 키워드를 이용해서 항상 header를 추가할 수 있다.
+해당 always 키워드가 있는 이유는
+Origin의 응답 Status가 200, 201, 204, 206, 301, 302, 303, 304, 307, 308 인 경우에만 동작한다.</description></item><item><title>Edge 컴퓨팅의 장점</title><link>https://blog.mingky.me/post/diaries/2023-07-13/</link><pubDate>Thu, 13 Jul 2023 22:14:22 +0900</pubDate><guid>https://blog.mingky.me/post/diaries/2023-07-13/</guid><description>CDN 서비스들은 Edge, Relay, Origin 이라는 개념을 가지고 있다.
 Edge 서버는 Client의 접속을 받는 1차 서버이다.
 Edge 서버는 수가 많다. 여러 트래픽을 분산하여 처리하기 위해서이다.
 region 이란 개념으로 묶여 있다.
