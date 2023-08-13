@@ -1,4 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MINGKYME 블로그</title><link>https://blog.mingky.me/</link><description>Recent content on MINGKYME 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sat, 12 Aug 2023 10:21:27 +0900</lastBuildDate><atom:link href="https://blog.mingky.me/index.xml" rel="self" type="application/rss+xml"/><item><title>nginx 에서 SSL 인증서를 여러개 설정하는 방법</title><link>https://blog.mingky.me/post/nginx/2023-08-12/</link><pubDate>Sat, 12 Aug 2023 10:21:27 +0900</pubDate><guid>https://blog.mingky.me/post/nginx/2023-08-12/</guid><description>AWS CloudFlare에서는 cloudflare.net 과 개인이 사용하는 도메인의 인증서를 모두 지원한다.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MINGKYME 블로그</title><link>https://blog.mingky.me/</link><description>Recent content on MINGKYME 블로그</description><generator>Hugo -- gohugo.io</generator><language>ko</language><lastBuildDate>Sun, 13 Aug 2023 14:57:45 +0000</lastBuildDate><atom:link href="https://blog.mingky.me/index.xml" rel="self" type="application/rss+xml"/><item><title>CDN의 구성</title><link>https://blog.mingky.me/post/cdn/2023-08-13/</link><pubDate>Sun, 13 Aug 2023 14:57:45 +0000</pubDate><guid>https://blog.mingky.me/post/cdn/2023-08-13/</guid><description>개요 CDN은 크게 3가지 요소로 이뤄져있다.
+Edge Relay Origin 각각의 요소가 하는 역할을 알아보자.
+1. Edge 클라이언트가 접근하는 곳이 Edge 서버이다.
+해당 서버에서는 Hot content를 cache 한다.
+Edge 서버는 Raound Robin 형식으로 트래픽을 분배한다.
+만약, URL을 기준으로 트래픽을 분배한다면 Hot Content를 담당하는 서버는 트래픽을 버티지 못할 것이기 떄문이다.
+Edge의 캐시 조건으로는
+사용 횟수가 일정 횟수 이상 (proxy_cache_min_uses) 마지막으로 사용된 기간 (expires) 등이 있다.
+만약 Cache가 돼 있지 않는다면? Relay로 요청을 넘긴다.</description></item><item><title>nginx 에서 SSL 인증서를 여러개 설정하는 방법</title><link>https://blog.mingky.me/post/nginx/2023-08-12/</link><pubDate>Sat, 12 Aug 2023 10:21:27 +0900</pubDate><guid>https://blog.mingky.me/post/nginx/2023-08-12/</guid><description>AWS CloudFlare에서는 cloudflare.net 과 개인이 사용하는 도메인의 인증서를 모두 지원한다.
 내가 아는 안에서는 nginx는 1개의 인증서파일을 지원하는 것으로 알고 있었는데, 궁금증이 생겼다.
 구글링 해본 결과, map을 이용해서 인증서를 갈이끼울수 있다.
 map $ssl_preread_server_name $certificate { default example.com; www.example01.com example01.com; www.example02.com example02.com; } 기존에 사용하는 $host는 TLS Handshake 과정 이후에 값이 생긴다.
